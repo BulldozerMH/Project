@@ -10,6 +10,16 @@ sudo cp /home/ubuntu/Project/Back/000-default.conf /etc/apache2/sites-available.
 
 sudo systemctl restart apache2.service
 
-#sudo cp /home/ubuntu/Project/mysql/mysqld.cnf /etc/mysql/mysqld.cnf
+sudo cp /home/ubuntu/Project/mysql/b2_mysqld.cnf /etc/mysql/mysql.conf.d/mysqld.cnf
 
-#sudo systemctl restart mysql.service
+sudo systemctl restart mysql.service
+
+sudo mysql
+
+STOP REPLICA;
+
+CHANGE MASTER TO MASTER_HOST='10.1.10.250', MASTER_USER='repl', MASTER_PASSWORD='Back1_Repl2024', SOURCE_AUTO_POSITION=1, GET_MASTER_PUBLIC_KEY = 1;
+
+START SLAVE;
+
+exit
