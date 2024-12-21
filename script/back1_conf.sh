@@ -19,5 +19,3 @@ sudo systemctl restart mysql.service
 sudo mysql -e CREATE USER repl@'%' IDENTIFIED WITH 'caching_sha2_password' BY 'Back1_Repl2024';
 
 sudo mysql -e GRANT REPLICATION SLAVE ON *.* TO repl@'%';
-
-exit
