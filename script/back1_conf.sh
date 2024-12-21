@@ -2,6 +2,8 @@
 
 # back config
 
+sudo mkdir /etc/www/1
+
 sudo cp /home/ubuntu/Project/site/1.html /etc/www/1/index.html
 
 sudo cp /home/ubuntu/Project/Back/ports.conf /etc/apache2/ports.conf
