@@ -2,6 +2,8 @@
 
 #front+grafana
 
+sudo apt upgrade
+
 sudo apt install nginx -y
 
 sudo apt install prometheus-node-exporter -y
