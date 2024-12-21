@@ -2,6 +2,8 @@
 
 # back script
 
+sudo apt upgrade 
+
 sudo apt install apache 2 -y
 
 sudo apt install mysql-server -y
