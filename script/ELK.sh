@@ -12,13 +12,13 @@ sudo cp /home/ubuntu/Project/ELK/jvm.options /etc/elasticsearch/jvm.options.d/jv
 
 sudo cp /home/ubuntu/Project/ELK/elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
-sudo systemctl deamon-reload
+sudo systemctl daemon-reload
 
 sudo systemctl enable --now elasticsearch.service
 
 sudo dpkg -i kibana-8.9.1-amd64.deb
 
-sudo systemctl deamon-reload
+sudo systemctl daemon-reload
 
 sudo systemctl enable --now kibana.service
 
