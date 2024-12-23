@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #front+grafana
-
 sudo apt upgrade
 
 sudo apt install nginx -y
