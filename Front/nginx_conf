@@ -19,8 +19,8 @@
 # Default server configuration
 #
 upstream backend {
-	server 10.1.10.250:80;
-	server 10.1.10.251:80;
+	server 10.1.10.250:8050;
+	server 10.1.10.251:8050;
 }
 
 server {
