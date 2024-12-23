@@ -7,7 +7,7 @@ sudo apt upgrade -y
 
 sudo apt install nginx -y
 
-sudo apt install prometheus-node-exporter -y
+sudo apt install prometheus prometheus-node-exporter -y
 
 sudo apt install -y adduser libfontconfig1 musl
 
